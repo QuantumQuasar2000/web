@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Má krásná webová stránka</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 1em;
+        }
+
+        /* Styly pro obrázky v oddílu */
+        .image-container {
+            margin-top: 1em;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 1em;
+        }
+
+        /* Styly pro tlačítka */
+        .nav-buttons {
+            margin-top: 1em;
+        }
+
+        .nav-buttons button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-right: 0.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Vítejte na mé krásné webové stránce</h1>
+    </header>
+
+    <section>
+        <h2>O nás</h2>
+        <p>Toto je fantastické místo, kde najdete úžasné informace o nás.</p>
+
+        <!-- Obrázky v oddílu -->
+        <div class="image-container">
+            <img src="url_obrazku1.jpg" alt="Popis obrázku 1">
+            <img src="url_obrazku2.jpg" alt="Popis obrázku 2">
+        </div>
+
+        <!-- Tlačítka pro pohyb po stránce -->
+        <div class="nav-buttons">
+            <button onclick="scrollToSection('services')">Přejít na Naše služby</button>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Naše služby</h2>
+        <p>Poskytujeme širokou škálu skvělých služeb pro naše zákazníky.</p>
+
+        <!-- Obrázky v oddílu -->
+        <div class="image-container">
+            <img src="url_obrazku3.jpg" alt="Popis obrázku 3">
+            <img src="url_obrazku4.jpg" alt="Popis obrázku 4">
+        </div>
+
+        <!-- Tlačítka pro pohyb po stránce -->
+        <div class="nav-buttons">
+            <button onclick="scrollToSection('about')">Přejít na O nás</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Má krásná webová stránka. Vytvořeno s láskou.</p>
+    </footer>
+
+    <!-- Skript pro plynulý posun po stránce -->
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+
+</body>
+</html>
+
